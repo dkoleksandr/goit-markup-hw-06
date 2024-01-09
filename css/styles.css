@@ -513,9 +513,14 @@ h3 {
 }
 .portfolio-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  column-gap: 24px;
   row-gap: 48px;
+}
+@media only screen and (min-width: 768px) and (max-width:1157.98px) {
+  .portfolio-list{
+    row-gap: 72px;
+  }
 }
 .porfolio-card {
   display: flex;
