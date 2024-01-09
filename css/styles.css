@@ -133,9 +133,14 @@ h3 {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  margin-right: 120px;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+@media only screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
 }
 
 .header-logo-accent {
@@ -206,7 +211,7 @@ h3 {
   flex-direction: column;
   gap: 12px;
 
-  padding: 16px;
+  /* padding: 16px; */
 }
 @media only screen and (min-width: 1158px) {
   .header-socials {
@@ -229,7 +234,8 @@ h3 {
 /* Section 1 --> Order */
 .order {
   background: #2e2f42;
-  padding: 188px 0;
+
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -242,20 +248,46 @@ h3 {
   background-position: center;
   margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+  .order {
+    padding: 112px 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .order {
+    padding: 188px 0;
+  }
+}
 .order-container {
 }
 
 .order-title {
   max-width: 496px;
-  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
   text-align: center;
-  font-size: 56px;
+
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07; /* 107.143% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .order-title {
+    text-transform:none;
+    font-size: 56px;
+    line-height: 1.07; 
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .order-title {
+    text-transform:none;
+  margin-bottom: 48px;
+  }
 }
 
 .order-button {
@@ -524,7 +556,12 @@ h3 {
 /* Section 5 --> Footer */
 .footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+   .footer{
+    padding: 100px 0;
+  }
 }
 .footer-description {
   margin-right: 120px;
