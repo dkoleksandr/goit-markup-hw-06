@@ -240,7 +240,7 @@ h3 {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office_mob@1x.jpg);
   background-repeat: no-repeat;
 
   background-size: cover;
@@ -248,16 +248,58 @@ h3 {
   background-position: center;
   margin: 0 auto;
 }
+@media (min-resolution: 192dpi) {
+   .order{
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_mob@2x.jpg);
+  }
+}
 @media only screen and (min-width: 768px) {
   .order {
     padding: 112px 0;
+
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_tab@1x.jpg);
+  background-repeat: no-repeat;
   }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .order{
+   background-image: linear-gradient(
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)
+   ),
+   url(../images/people-office_tab@2x.jpg);
+ }
 }
 @media only screen and (min-width: 1158px) {
   .order {
     padding: 188px 0;
+
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_des@x1.jpg);
+  background-repeat: no-repeat;
   }
 }
+@media (min-resolution: 192dpi) and (min-width: 1158px) {
+  .order{
+   background-image: linear-gradient(
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)
+   ),
+   url(../images/people-office_des@2x.jpg);
+ }
+}
+
 .order-container {
 }
 
@@ -558,13 +600,40 @@ h3 {
   background: #2e2f42;
   padding: 96px 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .footer-container{
+    padding: 0 108px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+   .footer{
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 1158px) {
    .footer{
     padding: 100px 0;
   }
 }
 .footer-description {
+  /* margin-right: 120px; */
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-description {
+    margin-bottom: 72px;
+  }
+  }
+@media only screen and (min-width: 1158px) {
+.footer-description {
   margin-right: 120px;
+}
 }
 
 .footer-logo {
@@ -582,10 +651,16 @@ h3 {
   color: #f4f4fd;
 }
 .footer-desc {
+  text-align: left;
   width: 264px;
   color: #f4f4fd;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 768px) {
+   .footer-desc{
+    max-width: 264px;
+  }
 }
 
 /* #SECTION TEAM */
@@ -624,15 +699,23 @@ h3 {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: baseline; */
   /* gap: 120px; */
 }
 /* Footer socials */
+
+
 .footer-socials {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* gap: 16px; */
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-socials{
+    margin-bottom: 72px;
+  }
 }
 .socials-title {
   color: var(--WHITE, #fff);
@@ -843,7 +926,18 @@ h3 {
 /* Footer form */
 
 .footer-subscribe {
-  margin-left: auto;
+  /* margin-left: auto; */
+}
+@media only screen and (min-width: 1158px) {
+  .footer-subscribe {
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer-subscribe{
+    max-width: 453px;
+    /* width: 100%; */
+  }
 }
 
 .subscribe-title {
@@ -856,14 +950,27 @@ h3 {
 }
 .subscribe-form {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px;
 }
 .subscribe-form-field {
+  /* width: 100%; */
+}
+@media only screen and (max-width: 767.98px) {
+  .subscribe-form-field {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .subscribe-form-field {
+    max-width: 264px;
+  }
 }
 .subscribe-form-input {
+  width: 100%;
   padding: 8px 16px;
-  width: 264px;
+  
   height: 40px;
 
   border-radius: 4px;
@@ -877,6 +984,11 @@ h3 {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+}
+@media only screen and (min-width: 768px) {
+  .subscribe-form-input{
+    max-width: 264px;
+  }
 }
 
 .subscribe-form-input::placeholder {
