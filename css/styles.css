@@ -954,7 +954,7 @@ h3 {
 @media only screen and (min-width: 768px) {
   .footer-subscribe {
     max-width: 453px;
-    /* width: 100%; */
+    width: 100%;
   }
 }
 
@@ -972,8 +972,13 @@ h3 {
   justify-content: center;
   gap: 16px 24px;
 }
+@media only screen and (min-width: 768px) {
+  .subscribe-form{
+    /* flex-wrap: nowrap; */
+  }
+}
 .subscribe-form-field {
-  /* width: 100%; */
+  width: 100%;
 }
 @media only screen and (max-width: 767.98px) {
   .subscribe-form-field {
@@ -1003,11 +1008,6 @@ h3 {
   line-height: 2;
   letter-spacing: 0.04em;
 }
-@media only screen and (min-width: 768px) {
-  .subscribe-form-input {
-    max-width: 264px;
-  }
-}
 
 .subscribe-form-input::placeholder {
   color: currentColor;
@@ -1021,7 +1021,7 @@ h3 {
 
   border-radius: 4px;
   background-color: #4d5ae5;
-  padding: 8px 24px;
+  padding: 8px 23px;
 
   color: #fff;
   text-align: center;
